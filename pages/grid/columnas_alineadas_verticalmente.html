@@ -7,14 +7,17 @@
 	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<title>Columnas Alineadas Verticalmente</title>
 	<style>
-		.row {
-			background: #e8e8e8;
+		.container {
 			margin-top: 20px;
+		}
+
+		.row {
+			background: #b8b8b8;
 			height: 150px;
 		}
 
 		.col {
-			background: #f2f2f2;
+			background: #cecece;
 			text-align: center;
 			padding: 10px;
 			border: 1px solid #4d5061;
@@ -23,31 +26,34 @@
 </head>
 <body>
 	<div class="container">
+		<span>align-items-start</span>
 		<div class="row align-items-start">
 			<div class="col">Columna #1</div>
 			<div class="col">Columna #2</div>
 			<div class="col">Columna #3</div>
 		</div>
 
+		<span>align-items-center</span>
 		<div class="row align-items-center">
 			<div class="col">Columna #1</div>
 			<div class="col">Columna #2</div>
 			<div class="col">Columna #3</div>
 		</div>
 
+		<span>align-items-end</span>
 		<div class="row align-items-end">
 			<div class="col">Columna #1</div>
 			<div class="col">Columna #2</div>
 			<div class="col">Columna #3</div>
 		</div>
 
+		<span>align-self-*</span>
 		<div class="row">
-			<div class="col align-self-start">Columna #1</div>
-			<div class="col align-self-center">Columna #2</div>
-			<div class="col align-self-end">Columna #3</div>
+			<div class="col align-self-start">Columna #1 align-self-start</div>
+			<div class="col align-self-center">Columna #2 align-self-center</div>
+			<div class="col align-self-end">Columna #3 align-self-end</div>
 		</div>
 	</div>
-
 
 	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -4,13 +4,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tipografia</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Tipografia 1</title>
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col">
+				<span>h* element</span>
 				<h1>Encabezado H1 <small class="text-muted">Texto Secundario</small></h1>
 				<h2>Encabezado H2 <small class="text-muted">Texto Secundario</small></h2>
 				<h3>Encabezado H3 <small class="text-muted">Texto Secundario</small></h3>
@@ -20,6 +21,7 @@
 			</div>
 
 			<div class="col">
+				<span>h* class</span>
 				<p class="h1">Parrafo estilo H1 <small class="text-muted">Texto Secundario</small></p>
 				<p class="h2">Parrafo estilo H2 <small class="text-muted">Texto Secundario</small></p>
 				<p class="h3">Parrafo estilo H3 <small class="text-muted">Texto Secundario</small></p>
@@ -31,6 +33,7 @@
 			<hr>
 
 			<div class="col">
+				<span>display</span>
 				<h1 class="display-1">Display 1</h1>
 				<h2 class="display-2">Display 2</h2>
 				<h3 class="display-3">Display 3</h3>
@@ -40,17 +43,22 @@
 			</div>
 
 			<div class="col">
+				<span>normal p</span>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut.</p>
+				<span>lead p</span>
 				<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut.</p>
 			</div>
 
 			<hr>
 
 			<div class="col">
-				<figure class="text-center">
+				<figure>
+					<span>blockquote</span><br>
 					<blockquote class="blockquote">
 						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dolore.</p>
 					</blockquote>
+
+					<span>blockquote-footer</span><br><br>
 					<figcaption class="blockquote-footer">
 						Lorem <cite title="Titulo de la fuente">ipsum dolor</cite> sit amet.
 					</figcaption>
@@ -59,6 +67,6 @@
 		</div>
 	</div>
 
-	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

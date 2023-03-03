@@ -5,39 +5,57 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tipografia 2</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-6">
+				<span>mark</span>
 				<p>Lorem <mark>ipsum dolor</mark> sit amet.</p>
+				<span>del</span>
 				<p><del>Lorem ipsum dolor sit amet.</del></p>
+				<span>s</span>
 				<p><s>Lorem ipsum dolor sit amet.</s></p>
+				<span>ins</span>
 				<p><ins>Lorem ipsum dolor sit amet.</ins></p>
+				<span>u</span>
 				<p><u>Lorem ipsum dolor sit amet.</u></p>
+				<span>strong</span>
 				<p><strong>Lorem ipsum dolor sit amet.</strong></p>
+				<span>em</span>
 				<p><em>Lorem ipsum dolor sit amet.</em></p>
 			</div>
 
 			<div class="col-6">
+				<span>fw-bold</span>
 				<p class="fw-bold">Texto en negritas</p>
+				<span>fw-normal</span>
 				<p class="fw-normal">Texto normal</p>
+				<span>fw-light</span>
 				<p class="fw-light">Texto Light</p>
+				<span>fst-italic</span>
 				<p class="fst-italic">Texto Italic</p>
+				<span>st-normal</span>
 				<p class="fst-normal">Texto con font-style normal</p>
-
+				<span>text-decoration-underline</span>
 				<p class="text-decoration-underline">Texto subrayado</p>
+				<span>text-decoration-line-through</span>
 				<p class="text-decoration-line-through">Texto tachado</p>
+				<span>text-decoration-none</span>
 				<a href="#" class="text-decoration-none">Enlace sin subrayado</a>
 			</div>
 
+			<span>text-(start,center,end)</span>
+			<hr>
+
 			<div class="col-12">
-				<hr>
 				<p class="text-start">Texto alineado a la izquierda</p>
 				<p class="text-center">Texto centrado</p>
 				<p class="text-end">Texto alineado a la derecha</p>
 			</div>
+
+			<span>text-*-(start,end)</span>
 			<hr>
 
 			<div class="col-12">
@@ -46,7 +64,8 @@
 				<p class="text-start text-lg-end">Alineado a la derecha en dispositivos largos en adelante</p>
 				<p class="text-start text-xl-end">Alineado a la derecha en dispositivos extra largos en adelante</p>
 			</div>
-
+			
+			<span>text-(lowercase,uppercase,capitalize)</span>
 			<hr>
 
 			<div class="col-12">
@@ -54,6 +73,9 @@
 				<p class="text-uppercase">MAYUSCULES - Lorem ipsum dolor sit.</p>
 				<p class="text-capitalize">Letras Capitales - Lorem ipsum dolor sit.</p>
 			</div>
+
+			<span>fs-#</span>
+			<hr>
 
 			<div class="col-12">
 				<p class="fs-1">Font Size 1</p>
@@ -64,6 +86,7 @@
 				<p class="fs-6">Font Size 6</p>
 			</div>
 
+			<span>text-font-colors</span>
 			<hr>
 
 			<div class="col-6">
@@ -76,18 +99,26 @@
 				<p class="text-muted">.text-muted</p>
 			</div>
 
+			<span>text-background-colors</span>
+			<hr>
+
 			<div class="col-6">
 				<p class="text-warning bg-dark">.text-warning</p>
 				<p class="text-info bg-dark">.text-info</p>
 				<p class="text-light bg-dark">.text-light</p>
 				<p class="text-white bg-dark">.text-white</p>
+			</div>
 
+			<span>text-transparency</span>
+			<hr>
+
+			<div class="col-6">
 				<p class="text-black-50">.text-black-50</p>
 				<p class="text-white-50 bg-dark">.text-black-50</p>
 			</div>
 		</div>
 	</div>
 
-	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
