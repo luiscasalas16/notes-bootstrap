@@ -5,7 +5,7 @@ Esta aplicación contiene ejemplos y pruebas de bootstrap. Está disponible en l
 - npm run dev
 - npm run build
 
-A continuación, un conjunto de direcciones que pueden ser de interés.
+A continuación, un conjunto de enlaces de interés.
 
 ---
 ### Documentación
