@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<style>
+		.container {
+			margin-top: 20px;
+		}
+		
+		.row {
+			background: #b8b8b8;
+		}
+
+		.columna {
+			background: #cecece;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #4d5061;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+		
+		<h4>cols - horizontally - align</h4>
+		<hr>
+	</div>
+
+	<div class="container">
+		<span class="badge bg-info mb-2">align-content-start</span>
+		<div class="row justify-content-start">
+			<div class="columna col-4">Column 1</div>
+			<div class="columna col-4">Column 2</div>
+		</div>
+
+		<span class="badge bg-info mb-2">align-content-center</span>
+		<div class="row justify-content-center">
+			<div class="columna col-4">Column 1</div>
+			<div class="columna col-4">Column 2</div>
+		</div>
+
+		<span class="badge bg-info mb-2">align-content-end</span>
+		<div class="row justify-content-end">
+			<div class="columna col-4">Column 1</div>
+			<div class="columna col-4">Column 2</div>
+		</div>
+
+		<span class="badge bg-info mb-2">align-content-around</span>
+		<div class="row justify-content-around">
+			<div class="columna col-4">Column 1</div>
+			<div class="columna col-4">Column 2</div>
+		</div>
+
+		<span class="badge bg-info mb-2">align-content-between</span>
+		<div class="row justify-content-between">
+			<div class="columna col-4">Column 1</div>
+			<div class="columna col-4">Column 2</div>
+		</div>
+
+		<span class="badge bg-info mb-2">align-content-evenly</span>
+		<div class="row justify-content-evenly">
+			<div class="columna col-4">Column 1</div>
+			<div class="columna col-4">Column 2</div>
+		</div>
+	</div>
+
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

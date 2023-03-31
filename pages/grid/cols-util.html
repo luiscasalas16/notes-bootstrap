@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<style>
+		.container {
+			margin-top: 20px;
+		}
+
+		.row {
+			background: #b8b8b8;
+		}
+
+		.columna {
+			background: #cecece;
+			text-align: center;
+			padding: 10px;
+			border: 1px solid #4d5061;
+		}
+
+		.contenido {
+			background: #cecece;
+			text-align: center;
+			border: 1px solid #4d5061;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+
+		<h4>cols - util</h4>
+		<hr>
+	</div>
+
+	<div class="container">
+
+		<h4>orders</h4>
+		<hr>
+
+		<span class="badge bg-info mb-2">orders-# / orders-*-#</span>
+		<div class="row">
+			<!-- Reordenamiento de columnas -->
+			<!-- order-1 al order-5 -->
+			<!-- .order-first -->
+			<!-- .order-last -->
+			<div class="columna col order-4 order-md-1">Column 1</div>
+			<div class="columna col order-3 order-md-2">Column 2</div>
+			<div class="columna col order-2 order-md-3">Column 3</div>
+			<div class="columna col order-1 order-md-4">Column 4</div>
+		</div>
+
+		<h4>offset</h4>
+		<hr>
+
+		<span class="badge bg-info mb-2">offset-# / offset-*-#</span>
+		<div class="row">
+			<div class="columna col-2 offset-3 offset-sm-8">Column</div>
+		</div>
+		<div class="row">
+			<div class="columna col-2 offset-3">Column 1</div>
+			<div class="columna col-2 offset-3">Column 2</div>
+		</div>
+
+		<h4>col-auto</h4>
+		<hr>
+
+		<span class="badge bg-info mb-2">col-auto</span>
+		<div class="row">
+			<div class="columna col-auto">Col 1</div>
+			<div class="columna col-auto">Column 2</div>
+			<div class="columna col-auto">Column 3</div>
+			<div class="columna col-auto">Col 4</div>
+		</div>
+
+		<h4>mx (margin)</h4>
+		<hr>
+
+		<span class="badge bg-info mb-2">mx-# / mx-*-#</span>
+		<div class="row mx-2 mx-md-4">
+			<div class="columna col mx-2 mx-md-4">Column 1</div>
+			<div class="columna col mx-2 mx-md-4">Column 2</div>
+			<div class="columna col mx-2 mx-md-4">Column 3</div>
+			<div class="columna col mx-2 mx-md-4">Column 4</div>
+		</div>
+
+		<h4>px (padding)</h4>
+		<hr>
+
+		<span class="badge bg-info mb-2">px-# / px-*-#</span>
+		<div class="row px-2 px-md-4">
+			<div class="columna col">Column 1</div>
+			<div class="columna col">Column 2</div>
+			<div class="columna col">Column 3</div>
+			<div class="columna col">Column 4</div>
+		</div>
+
+		<h4>gutters</h4>
+		<hr>
+		
+		<span class="badge bg-info mb-2">default</span>
+		<div class="row">
+			<div class="col-6">
+				<div class="contenido">Column 1</div>
+			</div>
+			<div class="col-6">
+				<div class="contenido">Column 2</div>
+			</div>
+			<div class="col-6">
+				<div class="contenido">Column 3</div>
+			</div>
+			<div class="col-6">
+				<div class="contenido">Column 4</div>
+			</div>
+		</div>
+
+		<span class="badge bg-info mb-2">g-0</span>
+		<div class="row g-0">
+			<div class="col-6">
+				<div class="contenido">Column 1</div>
+			</div>
+			<div class="col-6">
+				<div class="contenido">Column 2</div>
+			</div>
+			<div class="col-6">
+				<div class="contenido">Column 3</div>
+			</div>
+			<div class="col-6">
+				<div class="contenido">Column 4</div>
+			</div>
+		</div>
+
+		<span class="badge bg-info mb-2">gx-2</span>
+		<div class="row gx-5">
+			<div class="col-6">
+				<div class="contenido">Column 1</div>
+			</div>
+			<div class="col-6">
+				<div class="contenido">Column 2</div>
+			</div>
+			<div class="col-6">
+				<div class="contenido">Column 3</div>
+			</div>
+			<div class="col-6">
+				<div class="contenido">Column 4</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
