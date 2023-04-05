@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+		
+		<h4>switch</h4>
+	</div>
+
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-6">
+				<form action="">
+					<span class="badge bg-info mb-2">form-check & form-switch</span>
+					<div class="mb-3">
+						<div class="form-check form-switch">
+							<input type="checkbox" name="checkbox-id" class="form-check-input" id="checkbox-1">
+						</div>
+					</div>
+					
+					<span class="badge bg-info mb-2">form-check & form-switch & form-check-label</span>
+					<div class="mb-3">
+						<div class="form-check form-switch">
+							<input type="checkbox" name="checkbox-id" class="form-check-input" id="checkbox-2">
+							<label for="checkbox-2" class="form-check-label">Switch</label>
+						</div>
+					</div>
+
+					<span class="badge bg-info mb-2">form-check & form-switch & form-check-label & form-text</span>
+					<div class="mb-3">
+						<div class="form-check form-switch">
+							<input type="checkbox" name="checkbox-id" class="form-check-input" id="checkbox-3" aria-label="checkbox-example" aria-describedby="checkbox-help">
+							<label for="checkbox-3" class="form-check-label">Switch</label>
+						</div>
+						<div id="checkbox-help" class="form-text">
+							Help message.
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-6">
+				<span class="badge bg-info mb-2">disabled</span><br/>
+				<div class="form-check form-switch">
+					<input type="checkbox" name="checkbox-id" class="form-check-input" id="checkbox-4" disabled>
+					<label for="checkbox-4" class="form-check-label">Switch</label>
+				</div>
+
+				<span class="badge bg-info mb-2">form-check-inline</span><br/>
+				<div class="form-check form-switch form-check-inline">
+					<input type="checkbox" name="checkbox-inline-1" class="form-check-input" id="checkbox-inline-1">
+					<label for="checkbox-inline-1" class="form-check-label">Switch 1</label>
+				</div>
+				<div class="form-check form-switch form-check-inline">
+					<input type="checkbox" name="checkbox-inline-2" class="form-check-input" id="checkbox-inline-2">
+					<label for="checkbox-inline-2" class="form-check-label">Switch 2</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
