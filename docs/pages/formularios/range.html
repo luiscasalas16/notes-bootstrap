@@ -4,19 +4,52 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Range</title>
 	
   <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
 </head>
 <body>
 	<div class="container">
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+		
+		<h4>range</h4>
+	</div>
+
+	<div class="container">
 		<div class="row mt-3">
 			<div class="col-6">
-				<label for="rango" class="form-label">Presupuesto</label>
-				<input type="range" class="form-range" id="rango" min="0" max="1000" step="100">
-				<div class="d-flex justify-content-between">
-					<p class="form-text">$0</p>
-					<p class="form-text">$1000</p>
+				<form action="">
+					<span class="badge bg-info mb-2">form-range</span>
+					<div class="mb-3">
+						<input type="range" name="range-id" class="form-range" id="range-1" min="0" max="1000" step="100">
+					</div>
+					
+					<span class="badge bg-info mb-2">form-range & form-label</span>
+					<div class="mb-3">
+						<label for="range-2" class="form-label">Switch</label>
+						<input type="range" name="range-id" class="form-range" id="range-2" min="0" max="1000" step="100">
+					</div>
+
+					<span class="badge bg-info mb-2">form-range & form-label & form-text</span>
+					<div class="mb-3">
+						<label for="range-3" class="form-label">Switch</label>
+						<input type="range" name="range-id" class="form-range" id="range-3"  min="0" max="1000" step="100" aria-label="range-example" aria-describedby="range-help">
+						<div id="range-help" class="form-text">
+							Help message.
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-6">
+				<span class="badge bg-info mb-2">disabled</span><br/>
+				<div class="form-check form-switch">
+					<label for="range-4" class="form-label">Switch</label>
+					<input type="range" name="range-id" class="form-range" id="range-4" min="0" max="1000" step="100" disabled>
 				</div>
 			</div>
 		</div>

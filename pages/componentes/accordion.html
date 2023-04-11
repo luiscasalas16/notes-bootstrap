@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+	</div>
+	<div class="container">
+		<div class="row mt-4">
+			<div class="col">
+				<h4>accordion with parent</h4>
+				<hr>
+				<div class="accordion" id="accordionExample1">
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="header11">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="true" aria-controls="collapseOne">
+						  Accordion Item #1
+						</button>
+					  </h2>
+					  <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="header11" data-bs-parent="#accordionExample1">
+						<div class="accordion-body">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="header12">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapseTwo">
+						  Accordion Item #2
+						</button>
+					  </h2>
+					  <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="header12" data-bs-parent="#accordionExample1">
+						<div class="accordion-body">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="header13">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapseThree">
+						  Accordion Item #3
+						</button>
+					  </h2>
+					  <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="header13" data-bs-parent="#accordionExample1">
+						<div class="accordion-body">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mt-4">
+			<div class="col">
+				<h4>accordion without parent</h4>
+				<hr>
+				<div class="accordion" id="accordionExample2">
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="header21">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse21" aria-expanded="true" aria-controls="collapseOne">
+						  Accordion Item #1
+						</button>
+					  </h2>
+					  <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="header21">
+						<div class="accordion-body">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="header22">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapseTwo">
+						  Accordion Item #2
+						</button>
+					  </h2>
+					  <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="header22">
+						<div class="accordion-body">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+						</div>
+					  </div>
+					</div>
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="header23">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse23" aria-expanded="false" aria-controls="collapseThree">
+						  Accordion Item #3
+						</button>
+					  </h2>
+					  <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="header23">
+						<div class="accordion-body">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, praesentium animi. Ratione accusamus fugit saepe cupiditate omnis accusantium modi adipisci, sunt numquam expedita, ea deleniti aliquid et quas voluptatum iusto.</p>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

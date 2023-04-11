@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+  <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
+</head>
+<body>
+	<div class="container">
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+		
+		<h4>input</h4>
+	</div>
+
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-6">
+				<form action="">
+					<span class="badge bg-info mb-2">form-control</span>
+					<div class="mb-3">
+						<input type="text" class="form-control">
+					</div>
+
+					<span class="badge bg-info mb-2">form-control & form-label</span>
+					<div class="mb-3">
+						<label for="input-id" class="form-label">Input</label>
+						<input type="text" class="form-control" id="input-id">
+					</div>
+
+					<span class="badge bg-info mb-2">form-control & form-label & form-text</span>
+					<div class="mb-3">
+						<label for="input-id" class="form-label">Input</label>
+						<input type="text" class="form-control" id="input-id" aria-describedby="input-help">
+						<div id="input-help" class="form-text">
+							Help message.
+						</div>
+					</div>
+					
+					<span class="badge bg-info mb-2">form-control & placeholder</span>
+					<div class="mb-3">
+						<input type="text" class="form-control" aria-describedby="input-help" placeholder="Input">
+					</div>
+
+					<span class="badge bg-info mb-2">form-control & placeholder & form-text</span>
+					<div class="mb-3">
+						<input type="text" class="form-control" aria-describedby="input-help" placeholder="Input">
+						<div id="input-help" class="form-text">
+							Help message.
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-6">
+				<form action="">
+					<span class="badge bg-info mb-2">form-control-lg</span>
+					<input type="text" class="form-control form-control-lg mb-3" placeholder="input large">
+
+					<span class="badge bg-info mb-2">form-control-sm</span>
+					<input type="text" class="form-control form-control-sm mb-3" placeholder="input small">
+
+					<span class="badge bg-info mb-2">disabled</span>
+					<input type="text" class="form-control mb-3" placeholder="input disabled" disabled>
+
+					<span class="badge bg-info mb-2">readonly</span>
+					<input type="text" class="form-control mb-3" placeholder="input readonly" readonly>
+
+					<span class="badge bg-info mb-2">form-control-plaintext</span>
+					<input type="text" class="form-control-plaintext mb-3" placeholder="input plaintext">
+
+					<span class="badge bg-info mb-2">form-control-plaintext & readonly</span>
+					<input type="text" class="form-control-plaintext mb-3" placeholder="input plaintext readonly" readonly>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

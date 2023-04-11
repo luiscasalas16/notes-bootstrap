@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+  <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
+</head>
+<body>
+	<div class="container">
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+		
+		<h4>select</h4>
+	</div>
+
+	<div class="container">
+		<div class="row mt-3">
+			<div class="col-6">
+				<form action="">
+					<span class="badge bg-info mb-2">form-select</span>
+					<div class="mb-3">
+						<select class="form-select" aria-label="select-example" >
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+
+					<span class="badge bg-info mb-2">form-select & form-label</span>
+					<div class="mb-3">
+						<label for="select-id" class="form-label">Select</label>
+						<select class="form-select" id="select-id" aria-label="select-example" >
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+
+					<span class="badge bg-info mb-2">form-select & form-label & form-text</span>
+					<div class="mb-3">
+						<label for="select-id" class="form-label">Select</label>
+						<select class="form-select" id="select-id" aria-label="select-example" aria-describedby="select-help">
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+						<div id="select-help" class="form-text">
+							Help message.
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-6">
+				<form action="">
+					<span class="badge bg-info mb-2">form-select-lg</span>
+					<select class="form-select form-select-lg mb-3" aria-label="select-example" >
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+
+					<span class="badge bg-info mb-2">form-select-sm</span>
+					<select class="form-select form-select-sm mb-3" aria-label="select-example" >
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+
+					<span class="badge bg-info mb-2">disabled</span>
+					<select class="form-select form-select-sm mb-3" aria-label="select-example" disabled>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+
+					<span class="badge bg-info mb-2">multiple</span>
+					<select class="form-select form-select-sm mb-3" aria-label="select-example" multiple>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

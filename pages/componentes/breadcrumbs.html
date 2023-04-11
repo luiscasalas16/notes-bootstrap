@@ -4,19 +4,58 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Breadcrumbs / Migas de pan</title>
 	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+
+		<h4>breadcrumbs</h4>
+		<hr>
+	</div>
+	<div class="container">
 		<div class="row">
 			<div class="col">
-				<nav class="breadcrumb mt-3">
-					<a href="#" class="breadcrumb-item">Inicio</a>
-					<a href="#" class="breadcrumb-item">Productos</a>
-					<a href="#" class="breadcrumb-item">Tablets</a>
-					<span class="breadcrumb-item active">iPad</span>
-				</nav>
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+					  <li class="breadcrumb-item active" aria-current="page">Home</li>
+					</ol>
+				  </nav>
+				  
+				  <nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+					  <li class="breadcrumb-item"><a href="#">Home</a></li>
+					  <li class="breadcrumb-item active" aria-current="page">Library</li>
+					</ol>
+				  </nav>
+				  
+				  <nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+					  <li class="breadcrumb-item"><a href="#">Home</a></li>
+					  <li class="breadcrumb-item"><a href="#">Library</a></li>
+					  <li class="breadcrumb-item active" aria-current="page">Data</li>
+					</ol>
+				  </nav>
+				  
+				  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+					<ol class="breadcrumb">
+					  <li class="breadcrumb-item"><a href="#">Home</a></li>
+					  <li class="breadcrumb-item active" aria-current="page">Library</li>
+					</ol>
+				  </nav>
+				  
+				  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+					<ol class="breadcrumb">
+					  <li class="breadcrumb-item"><a href="#">Home</a></li>
+					  <li class="breadcrumb-item"><a href="#">Library</a></li>
+					  <li class="breadcrumb-item active" aria-current="page">Data</li>
+					</ol>
+				  </nav>
 			</div>
 		</div>
 	</div>

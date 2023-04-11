@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<style>
+		.row > div {
+			background: #cecece;
+			margin: 10px 0;
+			padding: 40px;
+		}
+	</style>
+  <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
+</head>
+<body>
+	<div class="container">
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+		
+		<h4>cols - basic</h4>
+		<hr>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6">
+				<h1>Lorem ipsum</h1>
+				<span class="badge bg-info d-none d-sm-inline-block">col-sm-6</span>
+				<span class="badge bg-info d-inline-block d-sm-none">col-12</span>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio nihil deleniti aperiam magni laudantium delectus, dolor dolorum odit assumenda fuga commodi, harum rem nobis similique quasi vel suscipit a!</p>
+				<button class="btn btn-primary">Lorem</button>
+			</div>
+
+			<div class="col-12 col-sm-6">
+				<h1>Lorem ipsum</h1>
+				<span class="badge bg-info d-none d-sm-inline-block">col-sm-6</span>
+				<span class="badge bg-info d-inline-block d-sm-none">col-12</span>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio nihil deleniti aperiam magni laudantium delectus, dolor dolorum odit assumenda fuga commodi, harum rem nobis similique quasi vel suscipit a!</p>
+				<button class="btn btn-primary">Lorem</button>
+			</div>
+
+			<div class="col-12">
+				<h1>Lorem ipsum</h1>
+				<span class="badge bg-info mb-2">col-12</span>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio nihil deleniti aperiam magni laudantium delectus, dolor dolorum odit assumenda fuga commodi, harum rem nobis similique quasi vel suscipit a!</p>
+				<button class="btn btn-primary">Lorem</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

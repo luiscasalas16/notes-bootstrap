@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+  <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
+</head>
+<body>
+	<div class="container">
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h4>badge headers</h4>
+				<hr>
+				<h1>Header H1 <span class="badge bg-info">Text</span></h1>
+				<h2>Header H2 <span class="badge bg-info">Text</span></h2>
+				<h3>Header H3 <span class="badge bg-info">Text</span></h3>
+				<h4>Header H4 <span class="badge bg-info">Text</span></h4>
+				<h5>Header H5 <span class="badge bg-info">Text</span></h5>
+				<h6>Header H6 <span class="badge bg-info">Text</span></h6>
+				<br/>
+			</div>
+
+			<div class="col-6">
+				<h4>badge squared</h4>
+				<hr>
+				<h3>Header &nbsp;<span class="badge bg-primary">Primary</span></h3>
+				<h3>Header &nbsp;<span class="badge bg-secondary">Secondary</span></h3>
+				<h3>Header &nbsp;<span class="badge bg-success">Success</span></h3>
+				<h3>Header &nbsp;<span class="badge bg-danger">Danger</span></h3>
+				<h3>Header &nbsp;<span class="badge bg-warning">Warning</span></h3>
+				<h3>Header &nbsp;<span class="badge bg-info">Info</span></h3>
+				<h3>Header &nbsp;<span class="badge bg-light text-dark">Light</span></h3>
+				<h3>Header &nbsp;<span class="badge bg-dark">Dark</span></h3>
+				<br/>
+			</div>
+
+			<div class="col-6">
+				<h4>badge rounded</h4>
+				<hr>
+				<h3>Header &nbsp;<span class="badge rounded-pill bg-primary">Primary</span></h3>
+				<h3>Header &nbsp;<span class="badge rounded-pill bg-secondary">Secondary</span></h3>
+				<h3>Header &nbsp;<span class="badge rounded-pill bg-success">Success</span></h3>
+				<h3>Header &nbsp;<span class="badge rounded-pill bg-danger">Danger</span></h3>
+				<h3>Header &nbsp;<span class="badge rounded-pill bg-warning">Warning</span></h3>
+				<h3>Header &nbsp;<span class="badge rounded-pill bg-info">Info</span></h3>
+				<h3>Header &nbsp;<span class="badge rounded-pill bg-light text-dark">Light</span></h3>
+				<h3>Header &nbsp;<span class="badge rounded-pill bg-dark">Dark</span></h3>
+				<br/>
+			</div>
+
+			<div class="col-12">
+				<h4>badge buttons</h4>
+				<hr>
+				<button type="button" class="btn btn-primary">
+					Notifications <span class="badge text-bg-success">5</span>
+				</button>
+				<button type="button" class="btn btn-secondary">
+					Notifications <span class="badge text-bg-success">5</span>
+				</button>
+				<button type="button" class="btn btn-primary">
+					Notifications <span class="badge text-bg-danger">5</span>
+				</button>
+				<button type="button" class="btn btn-secondary">
+					Notifications <span class="badge text-bg-danger">5</span>
+				</button>
+				<br/>
+				<br/>
+			</div>
+
+			<div class="col-12">
+				<h4>badge buttons position</h4>
+				<hr>
+				<button type="button" class="btn btn-primary position-relative">
+					Inbox
+					<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+						99+
+						<span class="visually-hidden">unread messages</span>
+					</span>
+				</button>
+				&nbsp;&nbsp;&nbsp;
+				<button type="button" class="btn btn-primary position-relative">
+					Inbox
+					<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+						99+
+						<span class="visually-hidden">unread messages</span>
+					</span>
+				</button>
+				<br/><br/>
+				<button type="button" class="btn btn-primary position-relative">
+					Profile
+					<span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle">
+						<span class="visually-hidden">new alerts</span>
+					</span>
+				</button>
+				&nbsp;&nbsp;&nbsp;
+				<button type="button" class="btn btn-primary position-relative">
+					Profile
+					<span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+						<span class="visually-hidden">new alerts</span>
+					</span>
+				</button>
+				<br/><br/>
+			</div>
+		</div>
+	</div>
+
+	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
