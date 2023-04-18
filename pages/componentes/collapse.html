@@ -4,45 +4,56 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Collapse</title>
 	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
-		<div class="row mt-3">
-			<div class="col-6">
-				<a 
-					href="#contenido-1"
-					type="button"
-					class="btn btn-primary"
-					data-bs-toggle="collapse"
-					aria-expanded="false"
-					aria-controls="contenido-1"
-				>Información</a>
-				<div class="collapse mt-3" id="contenido-1">
-					<div class="card">
-						<div class="card-body">
-							<h2 class="card-title">Titulo</h2>
-							<p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, impedit!</p>
-						</div>
+		<span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+		<span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+		<span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+		<span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+		<span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+		<span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+
+		<h4>collapse</h4>
+		<hr>
+	</div>
+	<div class="container">
+		<div class="row mt-2">
+			<div class="col-12">
+				<h4>simple</h4>
+				<hr>
+				<p>
+					<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button</button>
+				</p>
+				<div class="collapse" id="collapseExample">
+					<div class="card card-body">
+						Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
 					</div>
 				</div>
 			</div>
 
-			<div class="col-6">
-				<button 
-					type="button"
-					class="btn btn-primary"
-					data-bs-toggle="collapse"
-					data-bs-target="#contenido-2"
-					aria-expanded="false"
-					aria-controls="contenido-2"
-				>Información</button>
-				<div class="collapse mt-3" id="contenido-2">
-					<div class="card">
-						<div class="card-body">
-							<h2 class="card-title">Titulo</h2>
-							<p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, impedit!</p>
+			<div class="col-12">
+				<h4>multiple</h4>
+				<hr>
+				<p>
+					<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</button>
+					<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+					<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+				</p>
+				<div class="row">
+					<div class="col">
+						<div class="collapse multi-collapse" id="multiCollapseExample1">
+						<div class="card card-body">
+							Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+						</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="collapse multi-collapse" id="multiCollapseExample2">
+						<div class="card card-body">
+							Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+						</div>
 						</div>
 					</div>
 				</div>
