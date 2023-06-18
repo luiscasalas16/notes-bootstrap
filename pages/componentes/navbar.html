@@ -1,75 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Navbar</title>
-	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-</head>
-<body style="min-height: 2000px; padding-top:56px;">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-		<div class="container-fluid">
-			<a href="#" class="navbar-brand">Navbar</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  </head>
+  <body style="min-height: 2000px">
+    <nav class="navbar navbar-expand-md sticky-top" style="background-color: white">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0">
+          <span style="display: flex; align-items: center">
+            <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="me-2" />
+            Navbar
+          </span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarexample"
+          aria-controls="navbarexample"
+          aria-expanded="false"
+          aria-label="toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarexample">
+          <ul class="navbar-nav me-auto my-2 navbar-nav-scroll" style="--bs-scroll-height: 200px">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Link Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Link Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Dropdown </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action 1</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Action 2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 border-secondary shadow-none" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-secondary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
-			<!-- Boton para el menu movil -->
-			<button 
-				class="navbar-toggler"
-				type="button"
-				data-bs-toggle="collapse"
-				data-bs-target="#menu"
-				aria-controls="menu"
-				aria-expanded="false"
-				aria-label="Mostrar / Ocultar Menu"
-			>
-				<span class="navbar-toggler-icon"></span>
-			</button>
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+    </div>
 
-			<!-- Menu de navegacion -->
-			<div class="collapse navbar-collapse" id="menu">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+    Hello World
 
-					<!-- Dropdown -->
-					<li class="nav-item dropup">
-						<a 
-							href="#" 
-							class="nav-link dropdown-toggle"
-							role="button"
-							data-bs-toggle="dropdown"
-							aria-expanded="false"
-							id="dropdown-menu"
-						>
-							Categorias
-						</a>
-
-						<ul class="dropdown-menu" aria-labelledby="dropdown-menu">
-							<li><a href="#" class="dropdown-item">Elemento 1</a></li>
-							<li><a href="#" class="dropdown-item">Elemento 2</a></li>
-							<li><a href="#" class="dropdown-item">Elemento 3</a></li>
-						</ul>
-					</li>
-
-					<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-				</ul>
-
-				<form action="" class="d-flex">
-					<input type="search" class="form-control me-2" placeholder="Buscar" aria-label="Buscar">
-					<button class="btn btn-outline-light" type="button">Buscar</button>
-				</form>
-			</div>
-		</div>
-	</nav>
-
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h1>Hola Mundo</h1>
-			</div>
-		</div>
-	</div>
-
-	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
