@@ -1,102 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Modal</title>
-	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-</head>
-<body>
-	<div class="container">
-		<div class="row mt-5">
-			<div class="col">
-				<button 
-					class="btn btn-primary btn-lg"
-					data-bs-toggle="modal"
-					data-bs-target="#mi-modal-1"
-				>
-					Abrir Modal 1
-				</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
 
-				<div
-					class="modal fade"
-					id="mi-modal-1"
-					tabindex="-1"
-					aria-hidden="true"
-					aria-labelledby="label-modal-1"
-				>
-					<!-- Caja de dialogo -->
-					<div class="modal-dialog">
-						<!-- Contenido de la caja -->
-						<div class="modal-content">
-							<!-- Encabezado de la caja -->
-							<div class="modal-header">
-								<h5 class="modal-title">Titulo del modal</h5>
-								<button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-							</div>
+      <h4 class="mt-2">modal</h4>
+      <hr />
+    </div>
 
-							<!-- Cuerpo de la caja -->
-							<div class="modal-body">
-								<h1>Hola Mundo</h1>
-							</div>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-12">
+          <h4 class="mt-2">basic close outside</h4>
+          <hr />
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">Modal 1</button>
 
-							<!-- Pie de pagina de la caja -->
-							<div class="modal-footer">
-								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-								<button type="button" class="btn btn-primary">Acepto</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">body</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			<div class="col">
-				<button 
-					class="btn btn-primary btn-lg"
-					data-bs-toggle="modal"
-					data-bs-target="#mi-modal-2"
-				>
-					Abrir Modal 2
-				</button>
+        <div class="col-12">
+          <h4 class="mt-2">basic close static</h4>
+          <hr />
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Modal 2</button>
 
-				<div
-					class="modal fade"
-					id="mi-modal-2"
-					tabindex="-1"
-					aria-hidden="true"
-					aria-labelledby="label-modal-2"
-					data-bs-backdrop="static"
-				>
-					<!-- Caja de dialogo -->
-					<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-						<!-- Contenido de la caja -->
-						<div class="modal-content">
-							<!-- Encabezado de la caja -->
-							<div class="modal-header">
-								<h5 class="modal-title">Titulo del modal</h5>
-								<button class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-							</div>
+          <div class="modal fade" data-bs-backdrop="static" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">body</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-							<!-- Cuerpo de la caja -->
-							<div class="modal-body">
-								<div style="height: 1000px;">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe velit rerum, itaque eaque explicabo assumenda aut soluta recusandae quam nesciunt aperiam, eius sed temporibus suscipit aspernatur. Laboriosam illum harum voluptatem?
-								</div>
-							</div>
+        <div class="col-12">
+          <h4 class="mt-2">scroll</h4>
+          <hr />
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Modal 3</button>
 
-							<!-- Pie de pagina de la caja -->
-							<div class="modal-footer">
-								<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancelar</button>
-								<button type="button" class="btn btn-primary">Acepto</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus felis turpis, vitae dignissim velit lobortis eleifend. Mauris sed
+                    velit ligula. Duis quam mauris, dictum ac faucibus ut, suscipit a lorem. Donec sed est nec neque auctor maximus. In et justo ac odio
+                    porttitor suscipit at vitae eros. Nunc at venenatis eros, non suscipit libero. Phasellus finibus nunc et neque egestas, ac vehicula mauris
+                    congue. Phasellus bibendum enim ex, ut semper urna suscipit eu. Etiam vehicula sollicitudin scelerisque.
+                  </p>
+                  <p>
+                    Nulla facilisi. Ut mattis nisi quam, quis rhoncus sapien porttitor et. Nam justo libero, vestibulum nec felis et, mollis suscipit ipsum.
+                    Donec non suscipit leo. Phasellus lectus lectus, ultrices et facilisis at, vehicula id massa. Vivamus ultricies, erat id facilisis rutrum,
+                    sem purus pharetra nisi, nec lobortis arcu lectus eget est. Maecenas interdum egestas vestibulum. Proin viverra enim neque, eu pretium nunc
+                    vestibulum non. Duis pulvinar eget nibh et ullamcorper. Ut consectetur, ipsum nec convallis malesuada, nisl nunc viverra ex, sit amet
+                    scelerisque massa eros a nulla. Vestibulum rhoncus tellus in massa rhoncus congue. Nulla facilisi. Cras mattis arcu sed laoreet finibus.
+                    Curabitur ultricies ante et sem ornare suscipit.
+                  </p>
+                  <p>
+                    Mauris rhoncus lectus vel ipsum accumsan convallis. Quisque fringilla ultrices orci, non tincidunt dolor varius at. Sed imperdiet convallis
+                    diam quis vestibulum. Quisque sit amet fermentum mi. Duis semper egestas ex, et posuere eros faucibus in. Duis porttitor nec risus id
+                    tempus. Ut dignissim gravida massa in eleifend. Pellentesque nec venenatis lorem, eget molestie justo. Curabitur varius euismod felis vel
+                    scelerisque. Sed sit amet lectus condimentum, posuere ante ac, iaculis nunc. Cras a porttitor lacus. Nulla posuere, justo sed fringilla
+                    efficitur, nunc odio convallis lectus, egestas malesuada velit nunc sed quam. Aenean augue risus, congue ut tristique sed, aliquam id purus.
+                    Curabitur eget leo vitae metus accumsan tempus.
+                  </p>
+                  <p>
+                    Sed eu porttitor lacus. Vivamus pharetra justo vel semper volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada
+                    fames ac turpis egestas. Ut dictum ipsum sit amet hendrerit viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos. Ut ex elit, tempor a tristique et, pharetra sed mi. Fusce diam felis, fringilla sed diam quis, scelerisque volutpat sem.
+                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                  </p>
+                  <p>
+                    Fusce ac est imperdiet, volutpat elit et, vehicula risus. Cras sit amet commodo felis. Pellentesque habitant morbi tristique senectus et
+                    netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Vestibulum vel enim elementum, mattis metus id, tempor nisi.
+                    Nunc id massa nec arcu vehicula malesuada. Aenean blandit nulla non enim hendrerit pharetra. Fusce ac pulvinar elit, in vehicula turpis.
+                    Donec quis varius urna. Vestibulum rhoncus efficitur nisl, id sollicitudin mi facilisis ut. Praesent ut dolor vitae arcu aliquet laoreet nec
+                    ac eros. Nullam feugiat elit at tellus tempor faucibus. Nulla finibus ut leo molestie semper. Proin dolor nisl, euismod dignissim vulputate
+                    sit amet, pellentesque quis erat. Sed feugiat, velit at accumsan mattis, lorem ligula dictum dui, eget feugiat dui elit et lectus. Cras nec
+                    egestas ipsum, quis imperdiet libero.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <div class="col-12">
+          <h4 class="mt-2">center</h4>
+          <hr />
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">Modal 4</button>
+
+          <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">body</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <h4 class="mt-2">responsive size & fullscreen</h4>
+          <hr />
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">Modal 5</button>
+
+          <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-fullscreen-xl-down">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">body</div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
