@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Offcanvas</title>
-	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-</head>
-<body style="min-height: 1500px;">
-	<div class="container">
-		<div class="row mt-2">
-			<div class="col">
-				<div>
-					<a 
-						href="#mi-offcanvas"
-						class="btn btn-primary"
-						data-bs-toggle="offcanvas"
-						role="button"
-						aria-controls="mi-offcanvas"
-					>
-						Boton
-					</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  </head>
+  <body style="min-height: 2000px">
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
 
-					<div class="offcanvas offcanvas-bottom" tabindex="-1" id="mi-offcanvas" aria-labelledby="mi-offcanvas" data-bs-backdrop="true" data-bs-scroll="true">
-						<div class="offcanvas-header">
-							<h5 class="offcanvas-title">Titulo</h5>
-							<button 
-								type="button"
-								class="btn-close text-reset"
-								data-bs-dismiss="offcanvas"
-								aria-label="Cerrar"
-							>
-							</button>
-						</div>
+      <h4 class="mt-2">offcanvas</h4>
+      <hr />
+    </div>
 
-						<div class="offcanvas-body">
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus nisi reprehenderit sint veniam libero nihil quas. Ratione, culpa fugiat libero repellendus dolorum beatae deserunt, adipisci aliquid nemo excepturi quia.</p>
-						</div>
-					</div>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-12">
+          <h4 class="mt-2">no scroll & backdrop</h4>
+          <hr />
 
-					<h3>Lorem, ipsum dolor.</h3>
-					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, inventore.</p>
-				</div>
-			</div>
-		</div>
-	</div>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#exampleOffcanvas1" aria-controls="exampleOffcanvas1">
+            Offcanvas 1
+          </button>
 
-	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+          <div class="offcanvas offcanvas-bottom" tabindex="-1" id="exampleOffcanvas1" aria-labelledby="exampleOffcanvasLabel1">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="exampleOffcanvasLabel1">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus non perferendis ab sit veritatis, sapiente vero necessitatibus nulla
+                recusandae libero, ex eum sunt dolorum quasi officia cupiditate aspernatur consequuntur consectetur!
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <h4 class="mt-2">scroll & no backdrop</h4>
+          <hr />
+
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#exampleOffcanvas2" aria-controls="exampleOffcanvas2">
+            Offcanvas 1
+          </button>
+
+          <div
+            class="offcanvas offcanvas-bottom"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="exampleOffcanvas2"
+            aria-labelledby="exampleOffcanvasLabel2">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="exampleOffcanvasLabel2">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus non perferendis ab sit veritatis, sapiente vero necessitatibus nulla
+                recusandae libero, ex eum sunt dolorum quasi officia cupiditate aspernatur consequuntur consectetur!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Toast</title>
-	<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-</head>
-<body>
-	<div class="toast-container position-absolute p-3" style="right: 0; top: 0;">
-		<div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-			<div class="toast-header">
-				<strong class="me-auto">Titulo</strong>
-				<small>hace 1 minuto</small>
-				<button type="button" class="btn-close" aria-label="Close"></button>
-			</div>
-			<div class="toast-body">
-				Lorem ipsum dolor sit amet.
-			</div>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
 
-		<div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
-			<div class="toast-header">
-				<strong class="me-auto">Titulo</strong>
-				<small>hace 1 minuto</small>
-				<button type="button" class="btn-close" aria-label="Close"></button>
-			</div>
-			<div class="toast-body">
-				Lorem ipsum dolor sit amet.
-			</div>
-		</div>
+      <h4 class="mt-2">toast</h4>
+      <hr />
+    </div>
 
-		<div class="toast show bg-primary text-white" role="alert" aria-live="assertive" aria-atomic="true">
-			<div class="d-flex">
-				<div class="toast-body">
-					Lorem ipsum dolor sit amet.
-				</div>
-				<button class="btn-close btn-close-white me-2 m-auto" type="button"></button>
-			</div>
-		</div>
-	</div>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-12">
+          <h4 class="mt-2">basic</h4>
+          <hr />
 
-	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+          <button type="button" class="btn btn-primary" id="liveToastBtn1">toast 1</button>
+
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast1" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <strong class="me-auto">Bootstrap</strong>
+                <small class="text-muted">just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">Hello, world! This is a toast message 1.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <h4 class="mt-2">custom</h4>
+          <hr />
+
+          <button type="button" class="btn btn-primary" id="liveToastBtn2">toast 2</button>
+
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast2" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <strong class="me-auto">Bootstrap</strong>
+                <small class="text-muted">just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Hello, world! This is a toast message 2.
+                <div class="mt-2 pt-2 border-top">
+                  <button type="button" class="btn btn-primary btn-sm">Yes</button>
+                  <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">No</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const toastTrigger1 = document.getElementById("liveToastBtn1");
+      if (toastTrigger1) {
+        toastTrigger1.addEventListener("click", () => {
+          new bootstrap.Toast(document.getElementById("liveToast1")).show();
+        });
+      }
+
+      const toastTrigger2 = document.getElementById("liveToastBtn2");
+      if (toastTrigger2) {
+        toastTrigger2.addEventListener("click", () => {
+          new bootstrap.Toast(document.getElementById("liveToast2")).show();
+        });
+      }
+    </script>
+  </body>
 </html>
