@@ -1,66 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tooltips</title>
-	
-  <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
-</head>
-<body>
-	<div class="container">
-		<div class="row mt-5">
-			<div class="col">
-				<button
-					type="button"
-					class="btn btn-primary"
-					data-bs-toggle="tooltip"
-					data-bs-placement="top"
-					title="Tooltip Arriba"
-				>
-					Tooltip Arriba
-				</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
+  </head>
+  <body>
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
 
-				<button
-					type="button"
-					class="btn btn-primary"
-					data-bs-toggle="tooltip"
-					data-bs-placement="bottom"
-					title="Tooltip Abajo"
-				>
-					Tooltip Abajo
-				</button>
+      <h4 class="mt-2">tooltips</h4>
+      <hr />
+    </div>
 
-				<button
-					type="button"
-					class="btn btn-primary"
-					data-bs-toggle="tooltip"
-					data-bs-placement="left"
-					title="Tooltip Izquierda"
-				>
-					Tooltip Izquierda
-				</button>
 
-				<button
-					type="button"
-					class="btn btn-primary"
-					data-bs-toggle="tooltip"
-					data-bs-placement="right"
-					title="Tooltip Derecha"
-				>
-					Tooltip Derecha
-				</button>
-			</div>
+    <div class="container">
+		<div class="row mt-2">
+		  <div class="col-12">
+			<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+				Tooltip on top
+			  </button>
+			  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+				Tooltip on right
+			  </button>
+			  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+				Tooltip on bottom
+			  </button>
+			  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
+				Tooltip on left
+			  </button>
+		  </div>
 		</div>
-	</div>
+	  </div>
+    </div>
 
-	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script>
-		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-			return new bootstrap.Tooltip(tooltipTriggerEl)
-		})
-	</script>
-</body>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
 </html>

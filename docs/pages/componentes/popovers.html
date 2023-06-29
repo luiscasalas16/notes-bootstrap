@@ -1,82 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Popovers</title>
-	
-  <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
-</head>
-<body>
-	<div class="container">
-		<div class="row" style="margin-top: 200px;">
-			<div class="col">
-				<button
-					class="btn btn-lg btn-primary"
-					data-bs-toggle="popover"
-					title="Titulo del popover"
-					data-bs-content="Lorem ipsum dolor sit amet."
-					data-bs-placement="top"
-				>
-					Popover Arriba
-				</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
+  </head>
+  <body>
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
 
-				<button
-					class="btn btn-lg btn-primary"
-					data-bs-toggle="popover"
-					title="Titulo del popover"
-					data-bs-content="Lorem ipsum dolor sit amet."
-					data-bs-placement="bottom"
-				>
-					Popover Abajo
-				</button>
+      <h4 class="mt-2">popovers</h4>
+      <hr />
+    </div>
 
-				<button
-					class="btn btn-lg btn-primary"
-					data-bs-toggle="popover"
-					title="Titulo del popover"
-					data-bs-content="Lorem ipsum dolor sit amet."
-					data-bs-placement="left"
-				>
-					Popover Izquierda
-				</button>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-12">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="top"
+            data-bs-content="Top popover"
+            title="Popover title">
+            Popover on top
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="right"
+            data-bs-content="Right popover"
+            title="Popover title">
+            Popover on right
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="bottom"
+            data-bs-content="Bottom popover"
+            title="Popover title">
+            Popover on bottom
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-container="body"
+            data-bs-toggle="popover"
+            data-bs-placement="left"
+            data-bs-content="Left popover"
+            title="Popover title">
+            Popover on left
+          </button>
+        </div>
+      </div>
+    </div>
 
-				<button
-					class="btn btn-lg btn-primary"
-					data-bs-toggle="popover"
-					title="Titulo del popover"
-					data-bs-content="Lorem ipsum dolor sit amet."
-					data-bs-placement="right"
-				>
-					Popover Derecha
-				</button>
-			</div>
-
-			<div class="col-12 mt-5">
-				<a
-					href="#"
-					role="button"
-					tabindex="0"
-					class="btn btn-lg btn-primary"
-					data-bs-toggle="popover"
-					title="Titulo del popover"
-					data-bs-content="Lorem ipsum dolor sit amet."
-					data-bs-placement="top"
-					data-bs-trigger="focus"
-				>
-					Popover Arriba
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script>
-		var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-		var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-			return new bootstrap.Popover(popoverTriggerEl)
-		})
-	</script>
-</body>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+    </script>
+  </body>
 </html>
