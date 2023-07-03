@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	
-	<title>Grid de Bootstrap 5</title>
-  <link rel="stylesheet" href="/notes-bootstrap/assets/index-eb4f0700.css">
-  <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
-</head>
-<body>
-	<div class="container">
-		<header class="row">
-			<div class="col">
-				<h1>Header</h1>
-				<p>12 Columnas</p>
-			</div>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
+    <title>Grid</title>
+    <link rel="stylesheet" href="/notes-bootstrap/assets/index-eb4f0700.css">
+    <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
+  </head>
+  <body>
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+    </div>
 
-		<section class="contenedor-main row align-items-center">
-			<main class="col-md-8">
-				<h2>MAIN</h2>
-				<p class="d-none d-md-block">8 Columnas</p>
-				<p class="d-block d-md-none">12 Columnas</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde impedit veniam quis. Explicabo eligendi consequuntur dolor quia nisi deleniti unde voluptatibus mollitia? Fuga est molestias voluptate recusandae delectus quidem!</p>
+    <div class="container">
+      <header class="row">
+        <div class="col">
+          <h1>Header</h1>
+          <p>12 Columnas</p>
+        </div>
+      </header>
 
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque ipsa, consequuntur nemo omnis iusto, quo quis ut corrupti quasi maiores quidem minus possimus laudantium, beatae tenetur quibusdam a. Consequatur, explicabo?</p>
-			</main>
+      <section class="contenedor-main row align-items-center">
+        <main class="col-md-8">
+          <h2>MAIN</h2>
+          <p class="d-none d-md-block">8 Columnas</p>
+          <p class="d-block d-md-none">12 Columnas</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde impedit veniam quis. Explicabo eligendi consequuntur dolor quia nisi
+            deleniti unde voluptatibus mollitia? Fuga est molestias voluptate recusandae delectus quidem!
+          </p>
 
-			<aside class="col-md-4">
-				<h3>ASIDE</h3>
-				<p class="d-none d-md-block">4 Columnas</p>
-				<p class="d-block d-md-none">12 Columnas</p>
-			</aside>
-		</section>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque ipsa, consequuntur nemo omnis iusto, quo quis ut corrupti quasi maiores quidem minus
+            possimus laudantium, beatae tenetur quibusdam a. Consequatur, explicabo?
+          </p>
+        </main>
 
-		<section class="row widgets justify-content-between">
-			<div class="col-12 col-md-4 col-lg-3">
-				<p class="d-none d-lg-block">3 Columnas</p>
-				<p class="d-none d-md-block d-lg-none">4 Columnas</p>
-				<p class="d-block d-md-none">12 Columnas</p>
+        <aside class="col-md-4">
+          <h3>ASIDE</h3>
+          <p class="d-none d-md-block">4 Columnas</p>
+          <p class="d-block d-md-none">12 Columnas</p>
+        </aside>
+      </section>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-			</div>
+      <section class="row widgets justify-content-between">
+        <div class="col-12 col-md-4 col-lg-3">
+          <p class="d-none d-lg-block">3 Columnas</p>
+          <p class="d-none d-md-block d-lg-none">4 Columnas</p>
+          <p class="d-block d-md-none">12 Columnas</p>
 
-			<div class="col-12 col-md-4 col-lg-3">
-				<p class="d-none d-lg-block">3 Columnas</p>
-				<p class="d-none d-md-block d-lg-none">4 Columnas</p>
-				<p class="d-block d-md-none">12 Columnas</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-			</div>
+        <div class="col-12 col-md-4 col-lg-3">
+          <p class="d-none d-lg-block">3 Columnas</p>
+          <p class="d-none d-md-block d-lg-none">4 Columnas</p>
+          <p class="d-block d-md-none">12 Columnas</p>
 
-			<div class="col-12 col-md-4 col-lg-3">
-				<p class="d-none d-lg-block">3 Columnas</p>
-				<p class="d-none d-md-block d-lg-none">4 Columnas</p>
-				<p class="d-block d-md-none">12 Columnas</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
-			</div>
-		</section>
+        <div class="col-12 col-md-4 col-lg-3">
+          <p class="d-none d-lg-block">3 Columnas</p>
+          <p class="d-none d-md-block d-lg-none">4 Columnas</p>
+          <p class="d-block d-md-none">12 Columnas</p>
 
-		<footer class="row">
-			<div class="col">
-				<h4>Footer</h4>
-				<p>12 Columnas</p>
-			</div>
-		</footer>
-	</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
 
-	<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      <footer class="row">
+        <div class="col">
+          <h4>Footer</h4>
+          <p>12 Columnas</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

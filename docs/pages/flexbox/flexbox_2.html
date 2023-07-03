@@ -39,39 +39,49 @@
           <hr />
 
           <!-- 
-					.flex-fill
+			.flex-fill
 
-					sm | md | lg | xl | xxl
-					.flex-*-fill
-				-->
+			sm | md | lg | xl | xxl
+			.flex-*-fill
+          -->
 
           <div class="contenedor d-flex align-items-start">
-            <div>Lorem ipsum dolor sit amet.</div>
+            <div>Lorem Ipsum</div>
             <div class="flex-fill">.flex-fill</div>
+            <div>Lorem Ipsum</div>
+          </div>
+
+          <div class="contenedor d-flex align-items-start">
             <div class="flex-fill">.flex-fill</div>
+            <div>Lorem Ipsum</div>
+            <div class="flex-fill">.flex-fill</div>
+          </div>
+
+          <div class="contenedor d-flex align-items-start">
+            <div class="flex-lg-fill">.flex-lg-fill</div>
+            <div class="flex-fill">.flex-fill</div>
+            <div class="flex-lg-fill">.flex-lg-fill</div>
           </div>
         </div>
       </div>
 
       <div class="row my-2">
         <div class="col">
-          <h4>Align Items</h4>
+          <h4>Align Items (to container)</h4>
           <hr />
 
           <!-- Variantes:
-					.align-items-start
-					.align-items-end
-					.align-items-center
-					.align-items-baseline
-					.align-items-stretch
+			.align-items-start
+			.align-items-end
+			.align-items-center
+			.align-items-stretch
 
-					sm | md | lg | xl | xxl
-					.align-items-*-start
-					.align-items-*-end
-					.align-items-*-center
-					.align-items-*-baseline
-					.align-items-*-stretch
-				-->
+			sm | md | lg | xl | xxl
+			.align-items-*-start
+			.align-items-*-end
+			.align-items-*-center
+			.align-items-*-stretch
+          -->
 
           <p>.align-items-start</p>
           <div class="contenedor d-flex align-items-start">
@@ -94,13 +104,6 @@
             <div>Caja 3</div>
           </div>
 
-          <p>.align-items-baseline</p>
-          <div class="contenedor d-flex align-items-baseline">
-            <div>Caja 1</div>
-            <div>Caja 2</div>
-            <div>Caja 3</div>
-          </div>
-
           <p>.align-items-strech</p>
           <div class="contenedor d-flex align-items-strech">
             <div>Caja 1</div>
@@ -112,21 +115,19 @@
 
       <div class="row my-2">
         <div class="col">
-          <h4>Align Self</h4>
+          <h4>Align Self (to element)</h4>
           <hr />
 
           <!-- Variantes:
 					.align-self-start
 					.align-self-end
 					.align-self-center
-					.align-self-baseline
 					.align-self-stretch
 
 					sm | md | lg | xl | xxl
 					.align-self-*-start
 					.align-self-*-end
 					.align-self-*-center
-					.align-self-*-baseline
 					.align-self-*-stretch
 				-->
 
@@ -134,7 +135,6 @@
             <div class="align-self-start">.align-self-start</div>
             <div class="align-self-center">.align-self-center</div>
             <div class="align-self-end">.align-self-end</div>
-            <div class="align-self-baseline">.align-self-baseline</div>
             <div class="align-self-stretch">.align-self-stretch</div>
           </div>
         </div>
@@ -146,7 +146,7 @@
           <hr />
 
           <div class="contenedor d-flex justify-content-end">
-            <div class="me-auto">.me-auto</div>
+            <div class="me-auto">.me-auto (margin end)</div>
             <div>Caja 2</div>
             <div>Caja 3</div>
           </div>
@@ -154,11 +154,11 @@
           <div class="contenedor d-flex justify-content-start">
             <div>Caja 1</div>
             <div>Caja 2</div>
-            <div class="ms-auto">.ms-auto</div>
+            <div class="ms-auto">.ms-auto (margin start)</div>
           </div>
 
           <div class="contenedor d-flex flex-column align-items-start" style="height: 250px">
-            <div class="mb-auto">.mb-auto</div>
+            <div class="mb-auto">.mb-auto (margin bottom)</div>
             <div>Caja 2</div>
             <div>Caja 3</div>
           </div>
@@ -166,7 +166,7 @@
           <div class="contenedor d-flex flex-column align-items-end" style="height: 250px">
             <div>Caja 1</div>
             <div>Caja 2</div>
-            <div class="mt-auto">.mt-auto</div>
+            <div class="mt-auto">.mt-auto (margin top)</div>
           </div>
         </div>
       </div>

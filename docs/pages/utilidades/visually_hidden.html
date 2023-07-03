@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<title>Ocultos Visualmente (visually hidden)</title>
-  <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
-</head>
-<body>
-	<div class="container">
-		<div class="row mt-5">
-			<div class="col-6">
-				<h2 class="visually-hidden">Texto para dispositivos de lectura</h2>
-				<a class="visually-hidden-focusable" href="#content">Enlace para dispositivos de lectura, se puede hacer focus</a>
-			</div>
-		</div>
-	</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
+  </head>
+  <body>
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+    </div>
 
-	<script src="../js/bootstrap.bundle.js"></script>
-</body>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-6">
+          <h2 class="visually-hidden">Texto para dispositivos de lectura</h2>
+          <a class="visually-hidden-focusable" href="#content">Enlace para dispositivos de lectura y permite focus</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+  </body>
 </html>
