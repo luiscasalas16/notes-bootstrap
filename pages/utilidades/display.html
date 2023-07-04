@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+    </div>
+
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col-6 mt-3">
+          <div class="d-inline p-2 text-bg-primary">d-inline</div>
+          <div class="d-inline p-2 text-bg-dark">d-inline</div>
+        </div>
+        <div class="col-6 mt-3">
+          <div class="d-block p-2 text-bg-primary">d-block</div>
+          <div class="d-block p-2 text-bg-dark">d-block</div>
+        </div>
+        <div class="col-6 mt-3">
+          <span class="d-block d-sm-none">show only on xs</span>
+          <span class="d-none d-sm-block d-md-none">show only on sm</span>
+          <span class="d-none d-md-block d-lg-none">show only on md</span>
+          <span class="d-none d-lg-block d-xl-none">show only on lg</span>
+          <span class="d-none d-xl-block d-xxl-none">show only on xl</span>
+          <span class="d-none d-xxl-block">show only on xxl</span>
+        </div>
+        <div class="col-6 mt-3">
+          <span class="d-none">Hidden on all<br /></span>
+          <span class="d-none d-sm-block">Hidden only on xs<br /></span>
+          <span class="d-sm-none d-md-block">Hidden only on sm<br /></span>
+          <span class="d-md-none d-lg-block">Hidden only on md<br /></span>
+          <span class="d-lg-none d-xl-block">Hidden only on lg<br /></span>
+          <span class="d-xl-none">Hidden only on xl<br /></span>
+          <span class="d-xxl-none d-xxl-block">Hidden only on xxl<br /></span>
+          <br />
+          <span class="d-block">Visible on all<br /></span>
+          <span class="d-block d-sm-none">Visible only on xs<br /></span>
+          <span class="d-none d-sm-block d-md-none">Visible only on sm<br /></span>
+          <span class="d-none d-md-block d-lg-none">Visible only on md<br /></span>
+          <span class="d-none d-lg-block d-xl-none">Visible only on lg<br /></span>
+          <span class="d-none d-xl-block d-xxl-none">Visible only on xl<br /></span>
+          <span class="d-none d-xxl-block">Visible only on xxl<br /></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/bootstrap.bundle.js"></script>
+  </body>
+</html>
