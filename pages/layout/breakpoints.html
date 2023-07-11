@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <style>
+      /* Small devices (landscape phones) */
+      @media (min-width: 576px) {
+        .SmallOnlyMin {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* Medium devices (tablets) */
+      @media (min-width: 768px) {
+        .MediumOnlyMin {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* Large devices (desktops) */
+      @media (min-width: 992px) {
+        .LargeOnlyMin {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* X-Large devices (large desktops) */
+      @media (min-width: 1200px) {
+        .XLargeOnlyMin {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* XX-Large devices (very large desktops) */
+      @media (min-width: 1400px) {
+        .XXLargeOnlyMin {
+          color: green;
+          font-weight: bold;
+        }
+      }
+    </style>
+
+    <style>
+      /* Small devices (landscape phones) */
+      @media (max-width: 575.98px) {
+        .SmallOnlyMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* Medium devices (tablets) */
+      @media (max-width: 767.98px) {
+        .MediumOnlyMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* Large devices (desktops) */
+      @media (max-width: 991.98px) {
+        .LargeOnlyMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* X-Large devices (large desktops) */
+      @media (max-width: 1199.98px) {
+        .XLargeOnlyMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* XX-Large devices (very large desktops) */
+      @media (max-width: 1399.98px) {
+        .XXLargeOnlyMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+    </style>
+
+    <style>
+      /* X-Small devices (portrait phones) */
+      @media (max-width: 575.98px) {
+        .XSmallMinMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* Small devices (landscape phones) */
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        .SmallMinMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* Medium devices (tablets) */
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        .MediumMinMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* Large devices (desktops) */
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        .LargeMinMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* X-Large devices (large desktops) */
+      @media (min-width: 1200px) and (max-width: 1399.98px) {
+        .XLargeMinMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+
+      /* XX-Large devices (very large desktops) */
+      @media (min-width: 1400px) {
+        .XXLargeMinMax {
+          color: green;
+          font-weight: bold;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+
+      <h4>breakpoints</h4>
+      <hr />
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h4>Only Min</h4>
+          <p class="SmallOnlyMin">Small</p>
+          <p class="MediumOnlyMin">Medium</p>
+          <p class="LargeOnlyMin">Large</p>
+          <p class="XLargeOnlyMin">XLarge</p>
+          <p class="XXLargeOnlyMin">XXLarge</p>
+        </div>
+        <div class="col-4">
+          <h4>Only Max</h4>
+          <p class="SmallOnlyMax">Small</p>
+          <p class="MediumOnlyMax">Medium</p>
+          <p class="LargeOnlyMax">Large</p>
+          <p class="XLargeOnlyMax">XLarge</p>
+          <p class="XXLargeOnlyMax">XXLarge</p>
+        </div>
+        <div class="col-4">
+          <h4>Min & Max</h4>
+          <p class="XSmallMinMax">XSmall</p>
+          <p class="SmallMinMax">Small</p>
+          <p class="MediumMinMax">Medium</p>
+          <p class="LargeMinMax">Large</p>
+          <p class="XLargeMinMax">XLarge</p>
+          <p class="XXLargeMinMax">XXLarge</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

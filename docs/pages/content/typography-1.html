@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
   </head>
   <body>
     <div class="container">
@@ -14,12 +15,13 @@
       <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
       <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
       <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+
+      <h4>typography-1</h4>
+      <hr />
     </div>
 
     <div class="container">
       <div class="row">
-        <hr />
-
         <div class="col">
           <span class="badge bg-info mb-2">h# element</span>
           <h1>Heading H1</h1>
@@ -53,6 +55,9 @@
         </div>
 
         <div class="col">
+          <span class="badge bg-info mb-2">initialism</span>
+          <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+
           <span class="badge bg-info mb-2">lead</span>
           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, aut.</p>
 
@@ -63,6 +68,14 @@
             </blockquote>
 
             <span class="badge bg-info mb-2">blockquote-footer</span><br /><br />
+            <figcaption class="blockquote-footer">
+              <cite title="Titulo de la fuente">Lorem ipsum dolor sit amet.</cite>
+            </figcaption>
+
+            <span class="badge bg-info mb-2">blockquote & blockquote-footer</span><br />
+            <blockquote class="blockquote">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dolore.</p>
+            </blockquote>
             <figcaption class="blockquote-footer">
               <cite title="Titulo de la fuente">Lorem ipsum dolor sit amet.</cite>
             </figcaption>
