@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="/notes-bootstrap/assets/bootstrap-48fa63fb.css">
+  </head>
+  <body>
+    <div class="container">
+      <span class="badge bg-light text-dark d-block d-sm-none">xs</span>
+      <span class="badge bg-light text-dark d-none d-sm-block d-md-none">sm</span>
+      <span class="badge bg-light text-dark d-none d-md-block d-lg-none">md</span>
+      <span class="badge bg-light text-dark d-none d-lg-block d-xl-none">lg</span>
+      <span class="badge bg-light text-dark d-none d-xl-block d-xxl-none">xl</span>
+      <span class="badge bg-light text-dark d-none d-xxl-block">xxl</span>
+
+      <h4>layout</h4>
+    </div>
+    <div class="container">
+      <div class="col-12">
+        <hr />
+        <span class="badge bg-info my-3">vertical form</span>
+        <form>
+          <div class="mb-3">
+            <label for="inputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail1" />
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword1" class="form-label">Password</label>
+            <input type="text" class="form-control" id="inputPassword1" />
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      </div>
+
+      <div class="col-12">
+        <hr />
+        <span class="badge bg-info my-3">horizontal form</span>
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      </div>
+
+      <div class="col-12">
+        <hr />
+        <span class="badge bg-info my-3">inline form</span>
+        <form class="row row-cols-sm-auto g-3 align-items-center">
+          <div class="col-12">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" />
+          </div>
+          <div class="col-12">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password" />
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+  </body>
+</html>
