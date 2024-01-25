@@ -8,15 +8,15 @@ Esta aplicación contiene ejemplos y pruebas de bootstrap. Está disponible en l
 
 A continuación, un conjunto de enlaces de interés.
 
-### Documentación
+## Documentación
 
 - [https://getbootstrap.com](https://getbootstrap.com)
 - [https://www.w3schools.com/bootstrap5](https://www.w3schools.com/bootstrap5)
 
-### Artículos
-
-- [URL](https://www.freecodecamp.org/news/how-to-customize-bootstrap-with-sass) - personalizar bootstrap con scss
-
-### Herramientas
+## Herramientas
 
 - [bootstrapstudio.io](https://bootstrapstudio.io/)
+
+## Artículos
+
+- [URL](https://www.freecodecamp.org/news/how-to-customize-bootstrap-with-sass) - personalizar bootstrap con scss
